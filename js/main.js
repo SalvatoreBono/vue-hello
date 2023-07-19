@@ -1,6 +1,6 @@
 "use script"
 
-const { createApp } = Vue
+const { createApp } = Vue;
 
 createApp({
     data() {
@@ -23,7 +23,7 @@ createApp({
             if (this.changer === `img-custom`) {
                 this.changer = ``;
             } else {
-                this.changer = `img-custom`
+                this.changer = `img-custom`;
             }
         },
     },
