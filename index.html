@@ -22,13 +22,14 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   </head>
   <body>
     <div id="app">
       <main class="text-center">
-        <h1>{{title}}</h1>
-        <img :src="img" alt="" />
+        <h1 @click="colorChanger" :class="color">{{title}}</h1>
+        <img @click="imgChanger" :class="changer" :src="img" alt="" />
       </main>
     </div>
     <script
